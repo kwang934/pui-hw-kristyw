@@ -1,5 +1,5 @@
 # PUI homework
 
-Deployed website: `[https://kwang934.github.io/pui-hw-kristyw/](https://kwang934.github.io/pui-hw-kristyw/)`
+Deployed website: `https://kwang934.github.io/pui-hw-kristyw/`
 
-Repository link: `add the URL to this repository`
+Repository link: `https://github.com/kwang934/pui-hw-kristywy`
