@@ -2,13 +2,13 @@
     width: 400px;
 }
 
-.box-product {
+.product {
     display: inline-block;
     padding: 3px;
     text-align: center;
 }
 
-.box-cart {
+.cart {
     display: inline-block;
     padding: 3px;
     text-align: center;
@@ -39,6 +39,19 @@
     align-items: center;
   }
 
+.centered-hover {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-weight: normal;
+}
+
+.centered-hover:hover {
+    font-weight: bold;
+    background-color: yellow;
+    padding: 5px;
+}
+
 a {
     color: black; 
     text-decoration: none;
@@ -49,63 +62,72 @@ a {
     border: 2px solid black;
 }
 
-/*dropdown starts here */
-.dropdown {
-    box-sizing: border-box;
+.image3 {
+    width: 200px; height: 200px;
+    border: 2px solid black;
 }
 
-.options {
-    background: white;
-    color: black;
-    display: flex;
-    justify-content: space-between;
+.shorter-line {
+    width: 60%;
+    border: 1px solid black;
+}
+
+.thickness {
+    border: 1px solid black;
+}
+
+.box {
     align-items: center;
-    border: 2px black solid;
-    border-radius: 0.5em;
-    padding: 1em;
+    width: 100px;
+    height: 30px;
+    background-color: yellow;
+    border: 2px solid black;
+    padding: 1px;
+    font-size: 14px;
+    line-height: 0.3
+}
+
+.checkout {
+    font-weight: bold;
+    text-align: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+  }
+  
+  .selected {
+    background-color: transparent;
+    padding: 10px;
+    border: 2px solid black;
     cursor: pointer;
-}
+  }
+  
+  .options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border: 1px solid black;
+  }
+  
+  .option {
+    padding: 10px;
+    cursor: pointer;
+  }
 
-.options-clicked {
-    border: 2px black solid;
-}
-
-.caret {
+  .caret {
     width: 0;
     height: 0;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     border-top: 6px solid black;
-}
+    display: inline-block;
+  }
 
-.menu {
-    list-style: none;
-    padding: 0.2em 0.5em;
-    background: white;
-    border: 1px black solid;
-    border-radius: 0.5em;
-    color: transparent;
-    position: absolute;
-    top: 3em;
-    left: 50%;
-    width: 100%;
-    transform: translateX(-50%);
-    opacity: 0;
-    display: none;
-    transition: 0.2s;
-    z-index: 1;
-}
-
-.menu li {
-    padding: 0.7em 0.5em; 
-    margin: 0.3em 0;
-    border-radius: 0.5em
-}
-
-.active{
-    background: white;
-}
-
-.menu-open {
-    display: block;
-}
+  .text2 {
+    font-weight: bold;
+  }
