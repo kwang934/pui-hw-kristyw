@@ -2,6 +2,7 @@
     width: 400px;
 }
 
+/* tabs */
 .product {
     margin: auto;
     padding: 3px;
@@ -16,6 +17,7 @@
     width: 50px;
 }
 
+/* hover tabs */ 
 .hover {
     text-align: center;
     font-weight: normal;
@@ -27,15 +29,24 @@
     text-align: center;
 }
 
+/* any centered text */ 
 .text {
     text-align: center;
 }
 
+/* amount for product detail page */ 
+.text2 {
+    font-weight: bold;
+    padding: 20px;
+}
+
+/* images on index.html */ 
 .image {
     width: 400px; height: 400px;
     border: 2px solid black;
 }
 
+/* images on index2.html */ 
 .centered {
     margin: auto;
     display: block;
@@ -44,6 +55,7 @@
     width: 600px;
   }
 
+/* images on index3.html */ 
 .small-centered {
     margin: auto;
     display: block;
@@ -52,6 +64,7 @@
     width: 200px;
 }
 
+/* hovers on product gallery */ 
 .centered-hover {
     justify-content: center;
     align-items: center; 
@@ -68,16 +81,19 @@
     
 }
 
+/* making the tabs black instead of blue */ 
 a {
     color: black; 
     text-decoration: none;
 }
 
+/* image on index2.html */ 
 .image2 {
     width: 600px; height: 600px;
     border: 2px solid black;
 }
 
+/* image on index3.html */ 
 .image3 {
     width: 200px; height: 200px;
     border: 2px solid black;
@@ -88,6 +104,7 @@ a {
     border: 1px solid black;
 }
 
+/* line thickness */ 
 .thickness {
     border: 1px solid black;
 }
@@ -100,19 +117,11 @@ button {
     font-weight: bold;
   }
 
-.center { 
-    text-align: center; 
-}
-
+/* remove underline */ 
 .center-remove {
     text-align: center;
     font-size: 12px;
     margin-top: 5px;
-}
-
-.text2 {
-    font-weight: bold;
-    padding: 20px;
 }
 
 .dropdown {
@@ -120,20 +129,22 @@ button {
     width: 100%;
 }
 
+/* Spacing */ 
 .margin {
     margin-top: 40px;
   }
-
 
 .smaller-margin {
     margin-top: 20px;
   }
 
+/* Styling of the dropdown section */ 
 .item-selector {
     width: 182px;
     margin: auto;
 }
 
+/* Dropdown sizing */
 #glazing {
     width: 100%;
 
@@ -143,6 +154,7 @@ button {
     width: 100%;
 }
 
+/* Dropdown name */
 .dropdown-label {
     display: block;
     text-align: left;
