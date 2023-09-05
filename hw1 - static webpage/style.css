@@ -3,15 +3,17 @@
 }
 
 .product {
-    display: inline-block;
+    margin: auto;
     padding: 3px;
     text-align: center;
+    width: 100px;
 }
 
 .cart {
-    display: inline-block;
+    margin: auto;
     padding: 3px;
     text-align: center;
+    width: 50px;
 }
 
 .hover {
@@ -22,6 +24,7 @@
 .hover:hover {
     font-weight: bold;
     background-color: yellow;
+    text-align: center;
 }
 
 .text {
@@ -40,16 +43,19 @@
   }
 
 .centered-hover {
-    display: flex;
     justify-content: center;
     align-items: center; 
     font-weight: normal;
+    width: 400px;
+    margin: auto;
 }
 
 .centered-hover:hover {
     font-weight: bold;
     background-color: yellow;
-    padding: 5px;
+    padding: 6px;
+    margin: auto;
+    
 }
 
 a {
@@ -76,58 +82,34 @@ a {
     border: 1px solid black;
 }
 
-.box {
-    align-items: center;
-    width: 100px;
-    height: 30px;
-    background-color: yellow;
+button {
     border: 2px solid black;
-    padding: 1px;
-    font-size: 14px;
-    line-height: 0.3
+    color: black;
+    background-color: yellow;
+    padding: 10px;
+    width: 9%;
+    font-weight: bold;
+  }
+
+.center { 
+    text-align: center; 
 }
 
-.checkout {
-    font-weight: bold;
+.center-remove {
     text-align: center;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.text2 {
+    font-weight: bold;
+    padding: 20px;
 }
 
 .dropdown {
-    position: relative;
-    display: inline-block;
-    width: 200px;
-  }
-  
-  .selected {
-    background-color: transparent;
-    padding: 10px;
-    border: 2px solid black;
-    cursor: pointer;
-  }
-  
-  .options {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    border: 1px solid black;
-  }
-  
-  .option {
-    padding: 10px;
-    cursor: pointer;
-  }
+    text-align: center;
+}
 
-  .caret {
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 6px solid black;
-    display: inline-block;
-  }
-
-  .text2 {
-    font-weight: bold;
+.margin{
+    margin-top: 40px;
   }
