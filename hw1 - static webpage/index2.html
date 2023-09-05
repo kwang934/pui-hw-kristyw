@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="EN">
     <head>
         <title> Product Detail Page </title>
         <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
     </head>
 
     <body>
         <div class="logo">
             <a href="index.html">
-                <img src="https://raw.githubusercontent.com/kwang934/pui-hw-kristyw/2bed6b60426901cca0d4d8bd08c1dd6141e7aa0c/assets/logo/logo-01.svg">
+                <img src="https://raw.githubusercontent.com/kwang934/pui-hw-kristyw/2bed6b60426901cca0d4d8bd08c1dd6141e7aa0c/assets/logo/logo-01.svg" alt="logo">
             </a>
         </div>
 
@@ -28,7 +29,7 @@
         <p class="text"> Original cinnamon roll </p>
     
         <div class="centered">
-            <img src="https://github.com/kwang934/pui-hw-kristyw/blob/main/assets/products/original-cinnamon-roll.jpg?raw=true"
+            <img src="https://github.com/kwang934/pui-hw-kristyw/blob/main/assets/products/original-cinnamon-roll.jpg?raw=true" alt="Original cinnamon roll"
             class="image2">
 
             <div class="item-selector">
@@ -38,7 +39,7 @@
                     <div class="margin"></div>
 
                     <!-- https://www.w3schools.com/tags/tag_select.asp -->
-                    <label class="dropdown-label" for="cars"> Glazing: </label>
+                    <label class="dropdown-label" for="dropdown" id="glaze"> Glazing: </label>
                     
                     <select name="glazing" id="glazing">
                         <option value="og">Keep original</option>
@@ -49,7 +50,7 @@
 
                     <div class="smaller-margin"></div>
         
-                    <label class="dropdown-label" for="cars"> Pack size: </label>
+                    <label class="dropdown-label" for="dropdown" id="pack"> Pack size: </label>
         
                     <select name="pack-size" id="pack-size">
                         <option value="one">1</option>
