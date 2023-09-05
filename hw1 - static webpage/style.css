@@ -37,10 +37,20 @@
 }
 
 .centered {
-    display: flex;
+    margin: auto;
+    display: block;
     justify-content: center;
     align-items: center;
+    width: 600px;
   }
+
+.small-centered {
+    margin: auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
 
 .centered-hover {
     justify-content: center;
@@ -87,7 +97,6 @@ button {
     color: black;
     background-color: yellow;
     padding: 10px;
-    width: 9%;
     font-weight: bold;
   }
 
@@ -108,8 +117,32 @@ button {
 
 .dropdown {
     text-align: center;
+    width: 100%;
 }
 
-.margin{
+.margin {
     margin-top: 40px;
   }
+
+
+.margin2 {
+    margin-top: 20px;
+  }
+
+.item-selector {
+    width: 182px;
+    margin: auto;
+}
+
+#glazing {
+    width: 100%;
+}
+
+#pack-size {
+    width: 100%;
+}
+
+.dropdown-label {
+    display: block;
+    text-align: left;
+}

@@ -30,43 +30,46 @@
         <div class="centered">
             <img src="https://github.com/kwang934/pui-hw-kristyw/blob/main/assets/products/original-cinnamon-roll.jpg?raw=true"
             class="image2">
-        </div>
 
-        <p class="text"> Customize our delicious, hand-made cinnamon roll to your liking! </p>
+            <div class="item-selector">
+                <p> Customize our delicious, hand-made cinnamon roll to your liking! </p>
+                <div class="dropdown">
+
+                    <div class="margin"></div>
+
+                    <!-- https://www.w3schools.com/tags/tag_select.asp -->
+                    <label class="dropdown-label" for="cars"> Glazing: </label>
+                    
+                    <select name="glazing" id="glazing">
+                        <option value="og">Keep original</option>
+                        <option value="sm">Sugar milk</option>
+                        <option value="vm">Vanilla milk</option>
+                        <option value="dc">Double chocolate</option>
+                    </select>
+
+                    <div class="margin2"></div>
         
-        <div class="dropdown">
-            <label for="cars"> Glazing: </label>
+                    <label class="dropdown-label" for="cars"> Pack size: </label>
+        
+                    <select name="pack-size" id="pack-size">
+                        <option value="one">1</option>
+                        <option value="three">3</option>
+                        <option value="six">6</option>
+                        <option value="twelve">12</option>
+                    </select>
+
+                    <div class="margin"></div>
+                    
+                    <!-- https://www.w3schools.com/tags/tag_button.asp -->
+                    <div class="center">
+                        <span class="text2"> $2.49 </span>
+                        <button type="buttons"> Add to Cart </button>
+                    </div>
+
+                </div>
+            </div>
             
-            <br> 
-
-            <select name="glazing" id="glazing">
-                <option value="og">Keep original</option>
-                <option value="sm">Sugar milk</option>
-                <option value="vm">Vanilla milk</option>
-                <option value="dc">Double chocolate</option>
-            </select>
-        
-            <br><br>
-        
-            <label for="cars"> Pack size: </label>
-
-            <br> 
-
-            <select name="pack-size" id="pack-size">
-                <option value="one">1</option>
-                <option value="three">3</option>
-                <option value="six">6</option>
-                <option value="twelve">12</option>
-            </select>
-
         </div>
-
-        <div class="margin"></div>
-
-        <div class="center">
-            <span class="text2"> $2.49 </span>
-            <button type="buttons"> Add to Cart </button>
-        </div>
-
+        
     </body>
 </html>
