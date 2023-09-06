@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="EN">
+    <head>
+        <title> Product Detail Page </title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <div class="logo">
+            <a href="index.html">
+                <img src="https://raw.githubusercontent.com/kwang934/pui-hw-kristyw/2bed6b60426901cca0d4d8bd08c1dd6141e7aa0c/assets/logo/logo-01.svg" alt="logo">
+            </a>
+        </div>
+
+        <hr class="thickness">
+
+         <!-- https://www.w3schools.com/html/html_links.asp -->
+        <div class="product">
+            <div class="hover"> <a href="index.html"> PRODUCTS </a> </div>
+        </div>
+
+        <div class="cart">
+            <div class="hover"> <a href="index3.html"> CART </a> </div>
+        </div>
+
+        <br>
+
+        <p class="text"> Original cinnamon roll </p>
+    
+        <!-- Wrap the bottom half together for sizing purposes -->
+        <div class="centered">
+            <img src="https://github.com/kwang934/pui-hw-kristyw/blob/main/assets/products/original-cinnamon-roll.jpg?raw=true" alt="Original cinnamon roll"
+            class="image2">
+
+            <!-- This class determines width of all items -->
+            <div class="item-selector">
+                <p> Customize our delicious, hand-made cinnamon roll to your liking! </p>
+                <div class="dropdown">
+
+                    <div class="margin"></div>
+
+                    <!-- https://www.w3schools.com/tags/tag_select.asp -->
+                    <label class="dropdown-label" id="dropdown-label-glazing"> Glazing: </label>
+                    
+                    <select name="glazing" id="glazing">
+                        <option value="og">Keep original</option>
+                        <option value="sm">Sugar milk</option>
+                        <option value="vm">Vanilla milk</option>
+                        <option value="dc">Double chocolate</option>
+                    </select>
+
+                    <div class="smaller-margin"></div>
+        
+                    <label class="dropdown-label" id="dropdown-label-pack-size"> Pack size: </label>
+        
+                    <select name="pack-size" id="pack-size">
+                        <option value="one">1</option>
+                        <option value="three">3</option>
+                        <option value="six">6</option>
+                        <option value="twelve">12</option>
+                    </select>
+
+                    <div class="margin"></div>
+                    
+                    <!-- https://www.w3schools.com/tags/tag_button.asp -->
+                    <div class="text">
+                        <span class="text2"> $2.49 </span>
+                        <button type="button"> Add to Cart </button>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+        
+    </body>
+</html>
