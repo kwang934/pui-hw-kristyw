@@ -1,3 +1,7 @@
+div {
+    font-family: 'Helvetica', sans-serif;
+}
+
 .logo {
     width: 400px;
     flex-grow: 0;
@@ -278,6 +282,10 @@ Product Detail page sectioning */
     display: flex;
     margin-left: 100px;
     align-items: center;
+}
+
+.total {
+    margin-left: 250px;
 }
 
 /*font sizing*/
