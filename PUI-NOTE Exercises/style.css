@@ -1,9 +1,39 @@
 .notecard {
     background-color: pink;
-    width: 50rem;
-    border: 1px solid black;
-}
+    width: 700px;
+    border: 1px solid pink;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+  }
 
 .note-image {
-    width: 100%;
-}
+    width: 100px;
+  }
+
+  .note-text {
+    color: white;
+    font-family: Avenir;
+  }
+
+.notecard-title {
+    color: white;
+    font-family: Avenir;
+    font-weight: 700;
+  }
+
+.green-banner {
+    background-color: gray;
+    width: 100px;
+  }
+ 
+.date {
+    color: white;
+    font-weight: 200;
+    font-family: Avenir;
+  }
+
+.note-contents {
+    display: flex;
+  }

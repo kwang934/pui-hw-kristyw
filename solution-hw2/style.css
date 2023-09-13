@@ -137,7 +137,6 @@ button {
 
 /* remove underline */ 
 .center-remove {
-    text-align: center;
     font-size: 12px;
     margin-top: 5px;
     text-decoration: underline;
@@ -179,7 +178,8 @@ button {
     text-align: left;
 }
 
-/* Product detail page sectioning */
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+Product Detail page sectioning */
 .individual-product {
     display: flex;
     justify-content: center;
@@ -195,7 +195,7 @@ button {
     width: 182px;
 }
 
-/* Row alignment in index.html */
+/* Row alignment in Product Gallery */
 .row1 {
     display: flex;
     flex-direction: row;
@@ -208,4 +208,54 @@ button {
     flex-direction: row;
     gap: 50px;
     justify-content: center;
+}
+
+/* Shopping cart sectioning alignment */
+.cart {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cart1 {
+    display: flex;
+}
+
+.cart2 {
+    display: flex;
+}
+
+.cart3 {
+    display: flex;
+}
+
+.cart1-image-remove {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart1-text {
+    display: flex;
+    width: 160px;
+    margin-left: 100px;
+}
+
+.cart1-price {
+    display: flex;
+    margin-left: 100px;
+}
+
+.cart2-image-remove {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart2-text {
+    display: flex;
+    width: 240px;
+    margin-left: 100px;
+}
+
+.cart2-price {
+    display: flex;
+    margin-left: 100px;
 }

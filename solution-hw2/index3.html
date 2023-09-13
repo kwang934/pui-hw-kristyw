@@ -8,66 +8,92 @@
     </head>
 
     <body>
-        <div class="logo">
-            <a href="index.html">
-                <img src="https://raw.githubusercontent.com/kwang934/pui-hw-kristyw/2bed6b60426901cca0d4d8bd08c1dd6141e7aa0c/assets/logo/logo-01.svg" alt="logo">
-            </a>
+        <div class="nav">
+            <div class="logo"> 
+                <a href="index.html">
+                    <img src="https://raw.githubusercontent.com/kwang934/pui-hw-kristyw/2bed6b60426901cca0d4d8bd08c1dd6141e7aa0c/assets/logo/logo-01.svg" alt="logo">
+                </a>
+            </div>
+
+            <!-- https://www.w3schools.com/html/html_links.asp -->
+            <div class="tabs">
+                <nav>
+                    <div class="product">
+                        <div class="hover"> <a href="index.html"> PRODUCTS </a> </div>
+                    </div>
+
+                    <div class="cart">
+                        <div class="hover"> <a href="index3.html"> CART </a> </div>
+                    </div>
+                </nav>
+
+                <hr class="thickness">
+
+                <h1 class="handmade"> Shopping cart </h1>
+            </div>
         </div>
 
-        <hr class="thickness">
-
-        <!-- https://www.w3schools.com/html/html_links.asp -->
-        <div class="product">
-            <div class="hover"> <a href="index.html"> PRODUCTS </a> </div>
-        </div>
-
+        <div class="margin"></div>
+        
         <div class="cart">
-            <div class="hover"> <a href="index3.html"> CART </a> </div>
-        </div>
+            <div class="cart1">
+                <div class="cart1-image-remove">
+                    <div class="small-centered">
+                        <img src="https://github.com/kwang934/pui-hw-kristyw/blob/main/assets/products/original-cinnamon-roll.jpg?raw=true" alt="Original cinnamon roll"
+                            class="image3">
+                    </div>
 
-        <br> 
+                    <!-- https://www.geeksforgeeks.org/html-u-tag/ -->
+                    <div class="center-remove">
+                        <a href=""> Remove </a>
+                    </div>
+                </div>
 
-        <p class="text"> Shopping Cart </p>
-            <div class="small-centered">
-                <img src="https://github.com/kwang934/pui-hw-kristyw/blob/main/assets/products/original-cinnamon-roll.jpg?raw=true" alt="Original cinnamon roll"
-                    class="image3">
+                <div class="cart1-text">
+                    <p> Original Cinnamon Roll <br> Glazing: Keep original <br> Pack Size: 1 </p>
+                </div>
+
+                <div class="cart1-price">
+                    <p class="text"> $2.49 </p>
+                </div>
             </div>
-
-            <!-- https://www.geeksforgeeks.org/html-u-tag/ -->
-            <div class="center-remove">
-                <a href=""> Remove </a>
-            </div>
-
-            <p class="text"> Original Cinnamon Roll <br> Glazing: Keep original <br> Pack Size: 1 </p>
-
-            <p class="text"> $2.49 </p>
 
             <div class="margin"></div>
             
-            <div class="small-centered">
-                <img src="https://github.com/kwang934/pui-hw-kristyw/blob/main/assets/products/double-chocolate-cinnamon-roll.jpg?raw=true" alt="Double chocolate roll"
-                    class="image3">
+            <div class="cart2">
+                <div class="cart2-image-remove">
+                    <div class="small-centered">
+                        <img src="https://github.com/kwang934/pui-hw-kristyw/blob/main/assets/products/double-chocolate-cinnamon-roll.jpg?raw=true" alt="Double chocolate roll"
+                            class="image3">
+                    </div>
+
+                    <div class="center-remove">
+                        <a href=""> Remove </a>
+                    </div>
+                </div>
+
+                <div class="cart2-text">
+                    <p> Double Chocolate Cinnamon Roll <br> Glazing: Sugar milk <br> Pack Size: 6 </p>
+                </div>
+
+                <div class="cart2-price">
+                    <p class="text"> $27.45 </p>
+                </div>
             </div>
-
-            <div class="center-remove">
-                <a href=""> Remove </a>
-            </div>
-
-            <p class="text"> Double Chocolate Cinnamon Roll <br> Glazing: Sugar milk <br> Pack Size: 6 </p>
-
-            <p class="text"> $27.45 </p>
 
             <div class="margin"></div>
 
             <!-- Change line length -->
             <hr class="shorter-line">
 
-            <p class="text"> Total: $29.94 </p>
-
+            <div class="cart3">
+                <p class="text"> Total $29.94 </p>
+            </div>
+            
             <!-- https://www.w3schools.com/tags/tag_button.asp -->
             <div class="text">
                 <button type="button"> Checkout </button>
             </div>
+        </div>
     </body>
-
 </html>
