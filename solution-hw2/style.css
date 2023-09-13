@@ -6,7 +6,7 @@
 /* tabs */
 .product {
     padding: 3px;
-    width: 100px;
+    width: 90px;
 }
 
 .cart {
@@ -107,7 +107,8 @@ a {
 
 /* image on index2.html */ 
 .image2 {
-    width: 600px; height: 600px;
+    width: 600px; 
+    height: 600px;
     border: 2px solid black;
 }
 
@@ -118,7 +119,7 @@ a {
 }
 
 .shorter-line {
-    width: 60%;
+    width: 1%;
     border: 1px solid black;
 }
 
@@ -211,13 +212,23 @@ Product Detail page sectioning */
 }
 
 /* Shopping cart sectioning alignment */
+.container {
+    flex-direction: column;
+    padding-left: 450px;
+}
+
 .cart {
-    display: flex;
     flex-wrap: wrap;
+}
+
+.left-space {
+    display: flex;
+    flex-basis: 100px;
 }
 
 .cart1 {
     display: flex;
+    justify-content: space-between;
 }
 
 .cart2 {
@@ -226,6 +237,9 @@ Product Detail page sectioning */
 
 .cart3 {
     display: flex;
+    justify-content: space-between;
+    border-top-style: solid;
+    width: 735px;
 }
 
 .cart1-image-remove {
@@ -235,13 +249,16 @@ Product Detail page sectioning */
 
 .cart1-text {
     display: flex;
-    width: 160px;
-    margin-left: 100px;
+    margin-left: 50px;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 0;
 }
 
 .cart1-price {
     display: flex;
-    margin-left: 100px;
+    margin-left: 180px;
+    align-items: center;
 }
 
 .cart2-image-remove {
@@ -251,11 +268,19 @@ Product Detail page sectioning */
 
 .cart2-text {
     display: flex;
-    width: 240px;
-    margin-left: 100px;
+    margin-left: 50px;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 0;
 }
 
 .cart2-price {
     display: flex;
     margin-left: 100px;
+    align-items: center;
+}
+
+/*font sizing*/
+p {
+    font-size: 20px;
 }
