@@ -217,8 +217,8 @@ Product Detail page sectioning */
 
 /* Shopping cart sectioning alignment */
 .container {
-    flex-direction: column;
-    padding-left: 450px;
+    display: flex;
+    flex-direction: row;
 }
 
 .cart {
@@ -227,7 +227,7 @@ Product Detail page sectioning */
 
 .left-space {
     display: flex;
-    flex-basis: 100px;
+    width: 400px;
 }
 
 .cart1 {
@@ -242,8 +242,9 @@ Product Detail page sectioning */
 .cart3 {
     display: flex;
     justify-content: space-between;
-    border-top-style: solid;
-    width: 735px;
+    box-sizing: border-box;
+    border-top: 2px solid black;
+    width: 720px;
 }
 
 .cart1-image-remove {
