@@ -163,7 +163,7 @@ button {
 
 /* Styling of the dropdown section */ 
 .item-selector {
-    width: 400px;
+    width: 600px;
     margin: auto;
 }
 
@@ -197,7 +197,7 @@ Product Detail page sectioning */
 .detail-page-explanation {
     display: flex;
     margin-left: 100px;
-    width: 182px;
+    width: 250px;
 }
 
 /* Row alignment in Product Gallery */
@@ -221,8 +221,10 @@ Product Detail page sectioning */
     flex-direction: row;
 }
 
-.cart {
+.cart-space {
     flex-wrap: wrap;
+    padding: 3px;
+    margin-left: 70px;
 }
 
 .left-space {
@@ -244,7 +246,7 @@ Product Detail page sectioning */
     justify-content: space-between;
     box-sizing: border-box;
     border-top: 2px solid black;
-    width: 720px;
+    width: 100%;
 }
 
 .cart1-image-remove {
@@ -287,6 +289,10 @@ Product Detail page sectioning */
 
 .total {
     margin-left: 250px;
+}
+
+.cart-price {
+    margin-right: 100px;
 }
 
 /*font sizing*/
