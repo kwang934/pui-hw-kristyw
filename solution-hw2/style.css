@@ -1,4 +1,9 @@
+/*controlling the font */
 div {
+    font-family: 'Helvetica', sans-serif;
+}
+
+p { 
     font-family: 'Helvetica', sans-serif;
 }
 
@@ -11,6 +16,7 @@ div {
 .product {
     padding: 3px;
     width: 90px;
+    margin-bottom: 15px;
 }
 
 .cart {
@@ -31,6 +37,7 @@ nav {
 
 .handmade {
     margin-top: 90px;
+    font-size: 30px;
 }
 
 /* hover tabs */ 
@@ -57,9 +64,10 @@ nav {
 }
 
 /* amount for product detail page */ 
-.text2 {
+.details-price {
     font-weight: bold;
     padding: 20px;
+    font-size: 16px;
 }
 
 /* images on index.html */ 
@@ -90,12 +98,12 @@ nav {
 .centered-hover {
     font-weight: normal;
     width: 285px;
+    padding: 6px;
 }
 
 .centered-hover:hover {
     font-weight: bold;
     background-color: yellow;
-    padding: 6px;
     
 }
 
@@ -132,12 +140,23 @@ a {
     border: 1px solid black;
 }
 
-button {
+button-details {
     border: 2px solid black;
     color: black;
     background-color: yellow;
     padding: 10px;
     font-weight: bold;
+    font-size: 16px;
+    margin-left: 50px;
+  }
+
+button-cart {
+    border: 2px solid black;
+    color: black;
+    background-color: yellow;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
   }
 
 /* remove underline */ 
@@ -170,17 +189,21 @@ button {
 /* Dropdown sizing */
 #glazing {
     width: 100%;
-
+    font-size: 18px;
+    padding: 4px;
 }
 
 #pack-size {
     width: 100%;
+    font-size: 18px;
+    padding: 4px;
 }
 
 /* Dropdown name */
 .dropdown-label {
     display: block;
     text-align: left;
+    font-size: 18px;
 }
 
 /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/
@@ -244,8 +267,13 @@ Product Detail page sectioning */
 .cart3 {
     display: flex;
     justify-content: space-between;
-    box-sizing: border-box;
     border-top: 2px solid black;
+    width: 60%;
+}
+.cart4 {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
     width: 100%;
 }
 
@@ -264,8 +292,8 @@ Product Detail page sectioning */
 
 .cart1-price {
     display: flex;
-    margin-left: 180px;
     align-items: center;
+    margin-left: 50px;
 }
 
 .cart2-image-remove {
@@ -283,8 +311,12 @@ Product Detail page sectioning */
 
 .cart2-price {
     display: flex;
-    margin-left: 100px;
     align-items: center;
+    margin-left: 40px;
+}
+
+.line-spacing {
+    line-height: 1.4;
 }
 
 .total {
@@ -292,10 +324,15 @@ Product Detail page sectioning */
 }
 
 .cart-price {
-    margin-right: 100px;
+    margin-right: 20px;
 }
 
-/*font sizing*/
+/*cart font size*/
 p {
     font-size: 20px;
+}
+
+/*product price and text size*/
+.product-font {
+    font-size: 18px;
 }
