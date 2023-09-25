@@ -41,18 +41,22 @@ for (element of packsize) {
 }
 
 let orderPrice = document.querySelector(".details-price");
-let basePrice = 2.49;
+const basePrice = 2.49;
 let glazingPrice = 0;
 let packPrice = 1;
 
 function glazingChange(element) {
   let priceChangeGlaze = element.value;
   let glazingPrice = parseFloat(priceChangeGlaze);
+  console.log(glazingPrice);
   orderPrice.innerHTML = "$" + ((basePrice + glazingPrice) * packPrice).toFixed(2);
+  console.log(((basePrice + glazingPrice) * packPrice).toFixed(2));
 }
 
 function packChange(element) {
   let priceChangePack = element.value;
   let packPrice = priceChangePack;
+  console.log(packPrice);
+  console.log(((basePrice + glazingPrice) * packPrice).toFixed(2));
   orderPrice.innerHTML = "$" + ((basePrice + glazingPrice) * packPrice).toFixed(2);
 }
