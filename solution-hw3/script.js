@@ -15,7 +15,7 @@ for (element of glazing){
   let newoption = document.createElement('option');
   let newdisplaytext = document.createTextNode(element.glaze);
   newoption.appendChild(newdisplaytext);
-  newoption.setAttribute('value', element.glaze);
+  newoption.setAttribute('value', element.price);
   select_glaze.appendChild(newoption);
 }
 
@@ -36,7 +36,7 @@ for (element of packsize) {
   let newoption2 = document.createElement('option');
   let newdisplaytext2 = document.createTextNode(element.size);
   newoption2.appendChild(newdisplaytext2);
-  newoption2.setAttribute('value', element.size);
+  newoption2.setAttribute('value', element.price);
   select_pack.appendChild(newoption2);
 }
 
@@ -47,14 +47,15 @@ let packPrice = 1;
 
 function glazingChange(element) {
   let priceChangeGlaze = element.value;
-  let glazingPrice = priceChangeGlaze;
-  orderPrice.innerHTML = (basePrice + glazingPrice) * packPrice;
+  let glazingPrice = parseFloat(priceChangeGlaze);
+  let newPrice =  "$" + ((basePrice + glazingPrice) * packPrice).toFixed(2);
+  orderPrice.innerHTML = newPrice;
 }
 
 function packChange(element) {
   let priceChangePack = element.value;
   let packPrice = priceChangePack;
-  orderPrice.innerHTML = (basePrice + glazingPrice) * packPrice;
+  orderPrice.innerHTML = "$" + ((basePrice + glazingPrice) * packPrice).toFixed(2);
 }
 
 //orderPrice.innerHTML = (basePrice +  glazingPrice) * packPrice;
