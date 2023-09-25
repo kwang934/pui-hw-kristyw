@@ -5,6 +5,7 @@
         <title> Product Detail Page </title>
         <link rel="stylesheet" href="style.css">
         <meta charset="UTF-8">
+        <script src="./script.js" defer></script>
     </head>
 
     <body>
@@ -54,23 +55,13 @@
                         <!-- https://www.w3schools.com/tags/tag_select.asp -->
                         <label class="dropdown-label" id="dropdown-label-glazing"> Glazing: </label>
 
-                        <select name="glazing" id="glazing">
-                            <option value="og">Keep original</option>
-                            <option value="sm">Sugar milk</option>
-                            <option value="vm">Vanilla milk</option>
-                            <option value="dc">Double chocolate</option>
-                        </select>
+                        <select name="glazing" id="glazing" onchange="glazingChange(this)"></select>
 
                         <div class="smaller-margin"></div>
             
                         <label class="dropdown-label" id="dropdown-label-pack-size"> Pack size: </label>
             
-                        <select name="pack-size" id="pack-size">
-                            <option value="one">1</option>
-                            <option value="three">3</option>
-                            <option value="six">6</option>
-                            <option value="twelve">12</option>
-                        </select>
+                        <select name="packsize" id="packsize" onchange="packChange(this)"></select>
 
                         <div class="margin"></div>
                         
