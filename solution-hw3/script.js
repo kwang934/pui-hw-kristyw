@@ -48,8 +48,7 @@ let packPrice = 1;
 function glazingChange(element) {
   let priceChangeGlaze = element.value;
   let glazingPrice = parseFloat(priceChangeGlaze);
-  let newPrice =  "$" + ((basePrice + glazingPrice) * packPrice).toFixed(2);
-  orderPrice.innerHTML = newPrice;
+  orderPrice.innerHTML = "$" + ((basePrice + glazingPrice) * packPrice).toFixed(2);
 }
 
 function packChange(element) {
@@ -57,5 +56,3 @@ function packChange(element) {
   let packPrice = priceChangePack;
   orderPrice.innerHTML = "$" + ((basePrice + glazingPrice) * packPrice).toFixed(2);
 }
-
-//orderPrice.innerHTML = (basePrice +  glazingPrice) * packPrice;
