@@ -42,9 +42,8 @@ for (element of packsize) {
 
 let orderPrice = document.querySelector(".details-price");
 const basePrice = 2.49;
-let glazingPrice = 0;
-let packPrice = 1;
 
+let packPrice = 1;
 let finalPrice = 0;
 let changedPrice = 0;
 
