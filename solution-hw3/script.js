@@ -1,4 +1,4 @@
-let glazing = [
+const glazing = [
   {glaze: 'Keep Original',
     price: 0},
   {glaze: 'Sugar Milk',
@@ -11,7 +11,7 @@ let glazing = [
 
 let select_glaze = document.getElementById("glazing");
 
-for (element of glazing){
+for (element of glazing) {
   let newoption = document.createElement('option');
   let newdisplaytext = document.createTextNode(element.glaze);
   newoption.appendChild(newdisplaytext);
@@ -19,7 +19,7 @@ for (element of glazing){
   select_glaze.appendChild(newoption);
 }
 
-let packsize = [
+const packsize = [
   {size: "1",
     price: 1},
   {size: "3",
@@ -45,18 +45,21 @@ const basePrice = 2.49;
 let glazingPrice = 0;
 let packPrice = 1;
 
+let finalPrice = 0;
+let changedPrice = 0;
+
 function glazingChange(element) {
-  let priceChangeGlaze = element.value;
-  let glazingPrice = parseFloat(priceChangeGlaze);
-  console.log(glazingPrice);
-  orderPrice.innerHTML = "$" + ((basePrice + glazingPrice) * packPrice).toFixed(2);
-  console.log(((basePrice + glazingPrice) * packPrice).toFixed(2));
+  const priceChangeGlaze = Number(element.value);
+  changedPrice = Number(2.49 + priceChangeGlaze).toFixed(2);
+  finalPrice = "$" + (changedPrice);
+  console.log(finalPrice)
+  orderPrice.innerHTML = finalPrice;
 }
 
 function packChange(element) {
-  let priceChangePack = element.value;
-  let packPrice = priceChangePack;
-  console.log(packPrice);
-  console.log(((basePrice + glazingPrice) * packPrice).toFixed(2));
-  orderPrice.innerHTML = "$" + ((basePrice + glazingPrice) * packPrice).toFixed(2);
+  const priceChangePack = Number(element.value);
+  packPrice = Number(changedPrice * priceChangePack).toFixed(2);
+  finalPrice = "$" + packPrice;
+  console.log(finalPrice)
+  orderPrice.innerHTML = finalPrice;
 }
