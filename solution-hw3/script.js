@@ -52,7 +52,6 @@ function glazingChange(element) {
   const priceChangeGlaze = Number(element.value);
   changedPrice = Number(2.49 + priceChangeGlaze).toFixed(2);
   finalPrice = "$" + (changedPrice);
-  console.log(finalPrice)
   orderPrice.innerHTML = finalPrice;
 }
 
@@ -60,6 +59,5 @@ function packChange(element) {
   const priceChangePack = Number(element.value);
   packPrice = Number(changedPrice * priceChangePack).toFixed(2);
   finalPrice = "$" + packPrice;
-  console.log(finalPrice)
   orderPrice.innerHTML = finalPrice;
 }
