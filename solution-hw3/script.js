@@ -50,7 +50,7 @@ let changedPrice = 0;
 
 function glazingChange(element) {
   const priceChangeGlaze = Number(element.value);
-  changedPrice = Number(2.49 + priceChangeGlaze).toFixed(2);
+  changedPrice = Number(basePrice + priceChangeGlaze).toFixed(2);
   finalPrice = "$" + (changedPrice);
   orderPrice.innerHTML = finalPrice;
 }
