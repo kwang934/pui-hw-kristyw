@@ -1,3 +1,4 @@
+// Taken from script.js
 const glazing = [
     {glaze: 'Keep Original',
       price: 0},
@@ -49,7 +50,8 @@ const glazing = [
   
   function glazingChange(element) {
     const priceChangeGlaze = Number(element.value);
-    changedPrice = Number(basePrice + priceChangeGlaze).toFixed(2);
+    // Updated basePrice
+    changedPrice = Number(rolls["basePrice"] + priceChangeGlaze).toFixed(2);
     finalPrice = "$" + (changedPrice);
     orderPrice.innerHTML = finalPrice;
   }
@@ -61,6 +63,7 @@ const glazing = [
     orderPrice.innerHTML = finalPrice;
   }
 
+// Taken from rollsData.js
 const rolls = {
     "Original": {
         "basePrice": 2.49,
@@ -88,29 +91,43 @@ const rolls = {
     }    
 };
 
+// START OF HW4
 const cart = [];
 
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const rollType = params.get("roll");
 
+const rollBase = rolls[rollType].basePrice
+
 // Getting current info from dictionary
 let currentRoll = rolls[rollType];
 
-// Update DOM
+// Update image, name, and price
 document.getElementById('rollHeading').textContent = rollType + " Cinnamon Roll";
 document.getElementById('rollImage').src = '../../assets/products/' + currentRoll["imageFile"];
+document.getElementById('detailsCart').textContent = "$" + currentRoll["basePrice"];
 
-function glazingChange(element) {
-  const priceChangeGlaze = Number(element.value);
-  changedPrice = Number(currentRoll.basePrice + priceChangeGlaze).toFixed(2);
-  finalPrice = "$" + changedPrice;
-  orderPrice.innerHTML = finalPrice;
+class Roll {
+  constructor(rollType, rollGlazing, packSize, basePrice) {
+      this.type = rollType;
+      this.glazing =  rollGlazing;
+      this.size = packSize;
+      this.basePrice = basePrice;
+}}
+
+function addToCheckout() {
+  // https://www.geeksforgeeks.org/html-dom-select-selectedindex-property/
+  let glazeValue = select_glaze.selectedIndex;
+  let glazeOption = glazing[glazeValue];
+
+  let packSizeValue = select_pack.selectedIndex;
+  let packSizeOption = packsize[packSizeValue];
+
+  let myRoll = newRoll(rollType, glazeOption.glaze, packSizeOption.size, rollBase);
+  cart.push(myRoll);
+  console.log(cart);
 }
 
-function packChange(element) {
-  const priceChangePack = Number(element.value);
-  packPrice = Number(changedPrice * priceChangePack).toFixed(2);
-  finalPrice = "$" + packPrice;
-  orderPrice.innerHTML = finalPrice;
-}
+// Update cart when clicked on button
+document.querySelector("#addCart").addEventListener("click", addToCheckout)

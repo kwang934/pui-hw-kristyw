@@ -98,31 +98,5 @@
                 </div>
             </div>
         </div>
-
-        <script>
-            class Roll {
-                constructor(rollType, rollGlazing, packSize, basePrice) {
-                    this.type = rollType;
-                    this.glazing =  rollGlazing;
-                    this.size = packSize;
-                    this.basePrice = basePrice;
-            }}
-
-            const cart = [];
-
-            function addToCheckout() {
-                let rollType = "Original Cinnamon Roll";
-                let rollGlazing = "Keep Original";
-                let packSize = "1";
-                let basePrice = 2.49;
-
-                let myRoll = new Roll(rollType, rollGlazing, packSize, basePrice);
-                cart.push(myRoll);
-                console.log("Cart:", cart);
-            }
-
-            document.getElementById("checkoutButton").addEventListener("click", addToCheckout);
-
-        </script>
     </body>
 </html>
