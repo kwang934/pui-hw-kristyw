@@ -42,7 +42,6 @@ const glazing = [
   }
   
   let orderPrice = document.querySelector(".details-price");
-  const basePrice = 2.49;
   
   let packPrice = 1;
   let finalPrice = 0;
