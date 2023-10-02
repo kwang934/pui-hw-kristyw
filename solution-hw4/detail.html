@@ -5,7 +5,9 @@
         <title> Product Detail Page </title>
         <link rel="stylesheet" href="style.css">
         <meta charset="UTF-8">
-        <script src="./script.js" defer></script>
+        <!--<script src="./script.js" defer></script> -->
+        <!-- <script src="./rollsData.js" defer></script> -->
+        <script src="./index2.js" defer></script>
     </head>
 
     <body>
@@ -17,20 +19,20 @@
             </div>
 
             <!-- https://www.w3schools.com/html/html_links.asp -->
-            <div class="tabs">
+        <div class="tabs">
                 <nav>
                     <div class="product">
-                        <div class="hover"> <a href="index.html"> PRODUCTS </a> </div>
+                        <div class="hover"> <a href="gallery.html"> PRODUCTS </a> </div>
                     </div>
 
                     <div class="cart">
-                        <div class="hover"> <a href="index3.html"> CART </a> </div>
+                        <div class="hover"> <a href="cart.html"> CART </a> </div>
                     </div>
                 </nav>
 
                 <hr class="thickness">
 
-                <p class="handmade"> Original cinnamon roll </p>
+                <p class="handmade" id="rollHeading"> Original cinnamon roll </p>
             </div>
         </div>
 
@@ -40,8 +42,7 @@
             <div class="detail-image">
                 <!-- Wrap the bottom half together for sizing purposes -->
                 <div class="centered">
-                    <img src="https://github.com/kwang934/pui-hw-kristyw/blob/main/assets/products/original-cinnamon-roll.jpg?raw=true" alt="Original cinnamon roll"
-                    class="image2">
+                    <img id ="rollImage" alt="Original cinnamon roll" class="image2">
                 </div>
 
             <div class="detail-page-explanation">

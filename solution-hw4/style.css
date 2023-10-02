@@ -76,7 +76,7 @@ nav {
     border: 2px solid black;
 }
 
-/* images on index2.html */ 
+/* images on detail.html */ 
 .centered {
     margin: auto;
     display: block;
@@ -117,7 +117,7 @@ a {
     text-decoration: none;
 }
 
-/* image on index2.html */ 
+/* image on detail.html */ 
 .image2 {
     width: 600px; 
     height: 600px;
