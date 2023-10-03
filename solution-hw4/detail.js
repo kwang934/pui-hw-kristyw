@@ -50,11 +50,13 @@ const glazing = [
   function glazingChange(element) {
     const priceChangeGlaze = Number(element.value);
     // Updated basePrice
-    changedPrice = Number(rolls["basePrice"] + priceChangeGlaze).toFixed(2);
+    console.log(rolls)
+    console.log(rollBase)
+    changedPrice = Number(rolls[rollBase]["basePrice"] + priceChangeGlaze).toFixed(2);
     finalPrice = "$" + (changedPrice);
     orderPrice.innerHTML = finalPrice;
   }
-  
+
   function packChange(element) {
     const priceChangePack = Number(element.value);
     packPrice = Number(changedPrice * priceChangePack).toFixed(2);
@@ -123,7 +125,7 @@ function addToCheckout() {
   let packSizeValue = select_pack.selectedIndex;
   let packSizeOption = packsize[packSizeValue];
 
-  let myRoll = newRoll(rollType, glazeOption.glaze, packSizeOption.size, rollBase);
+  let myRoll = new Roll(rollType, glazeOption.glaze, packSizeOption.size, rollBase);
   cart.push(myRoll);
   console.log(cart);
 }
