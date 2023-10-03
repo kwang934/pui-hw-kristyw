@@ -52,7 +52,7 @@ const glazing = [
     // Updated basePrice
     console.log(rolls)
     console.log(rollBase)
-    changedPrice = Number(rolls[rollBase]["basePrice"] + priceChangeGlaze).toFixed(2);
+    changedPrice = Number(rolls[rollType]["basePrice"] + priceChangeGlaze).toFixed(2);
     finalPrice = "$" + (changedPrice);
     orderPrice.innerHTML = finalPrice;
   }
