@@ -88,6 +88,7 @@ function cartTemplate(roll) {
   updateBunPrice();
 }
 
+// Update total cart price
 function updateBunPrice() {
   let cartPrice = document.querySelector(".cart-price");
   let cartPriceVal = 0;
@@ -105,7 +106,7 @@ function updateBunPrice() {
   }
 }
  
-// Updates image and info
+// Updates image + text info
 function cartImage(roll) {
   const rollPho = roll.element.querySelector(".rollPhoto");
   rollPho.src = "./products/" + rolls[roll.type].imageFile;
