@@ -243,7 +243,7 @@ Product Detail page sectioning */
     flex-direction: row;
 }
 
-.cart-space {
+#cart-space {
     flex-wrap: wrap;
     padding: 3px;
     margin-left: 70px;

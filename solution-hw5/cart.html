@@ -5,6 +5,7 @@
         <title> Shopping Cart </title>
         <link rel="stylesheet" href="style.css">
         <meta charset="UTF-8">
+        <script src="./cart.js" defer></script>
     </head>
 
     <body>
@@ -37,32 +38,35 @@
 
         <div class="container">
             <div class="left-space"></div>
-            <div class="cart-space">
+            <template id="cart-space">
                 <div class="cart1">
-                    <div class="cart1-image-remove">
+                    <!-- <div class="cart1-image-remove">
                         <div class="small-centered">
                             <img src="https://github.com/kwang934/pui-hw-kristyw/blob/main/assets/products/original-cinnamon-roll.jpg?raw=true" alt="Original cinnamon roll"
                                 class="image3">
                         </div>
 
-                        <!-- https://www.geeksforgeeks.org/html-u-tag/ -->
+                        
                         <div class="center-remove">
                             <a href=""> Remove </a>
                         </div>
+                    </div> -->
+                    <div>
+                        <img class="rollPhoto" src="" width="100px">
+                        <button id="removeCartItem"><p>Remove</p></button>
                     </div>
 
-                    <div class="cart1-text">
-                        <p class="line-spacing"> Original Cinnamon Roll <br> Glazing: Keep original <br> Pack Size: 1 </p>
+                    <div class="orderInfo">
+                        <div class="rollName"></div>
+                        <div class="rollGlazeType"></div>
+                        <div class="rollSizingPack"></div>
                     </div>
-
-                    <div class="cart1-price">
-                        <p class="text"> $2.49 </p>
-                    </div>
+                    <div class="rollItemPrice"></div>
                 </div>
 
                 <div class="margin"></div>
                 
-                <div class="cart2">
+                <!-- <div class="cart2">
                     <div class="cart2-image-remove">
                         <div class="small-centered">
                             <img src="https://github.com/kwang934/pui-hw-kristyw/blob/main/assets/products/double-chocolate-cinnamon-roll.jpg?raw=true" alt="Double chocolate roll"
@@ -83,8 +87,8 @@
                     </div>
                 </div>
 
-                <div class="margin"></div>
-            </div>
+                <div class="margin"></div> -->
+            </template>
         </div>
 
             <!-- https://www.w3schools.com/tags/tag_button.asp -->
