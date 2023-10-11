@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="EN">
+    <head>
+        <title> Shopping Cart </title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <script src="./cart.js" defer></script>
+    </head>
+
+    <body>
+        <div class="nav">
+            <div class="logo"> 
+                <a href="index.html">
+                    <img src="https://raw.githubusercontent.com/kwang934/pui-hw-kristyw/2bed6b60426901cca0d4d8bd08c1dd6141e7aa0c/assets/logo/logo-01.svg" alt="logo">
+                </a>
+            </div>
+
+            <!-- https://www.w3schools.com/html/html_links.asp -->
+            <div class="tabs">
+                <nav>
+                    <div class="product">
+                        <div class="hover"> <a href="index.html"> PRODUCTS </a> </div>
+                    </div>
+
+                    <div class="cart">
+                        <div class="hover"> <a href="cart.html"> CART </a> </div>
+                    </div>
+                </nav>
+
+                <hr class="thickness">
+
+                <p class="handmade"> Shopping cart </p>
+            </div>
+        </div>
+
+        <div class="margin"></div>
+
+        <div class="container">
+            <div class="left-space"></div>
+            <template id="cart-space">
+                <div class="cart1">
+                    <div>
+                        <img class="rollPhoto" width="100px">
+                        <a id="removeCartItem"><p class = "resize">Remove</p></a>
+                    </div>
+
+                    <div class="orderInfo">
+                        <div class="rollName"></div>
+                        <div class="rollGlazeType"></div>
+                        <div class="rollSizingPack"></div>
+                    </div>
+
+                    <div class="rollItemPrice"></div>
+                    
+                </div>
+
+                <div class="margin"></div>
+            </template>
+        </div>
+
+            <!-- https://www.w3schools.com/tags/tag_button.asp -->
+            <div class="cart4">
+                <div class="left-space2"></div>
+                <div class="cart3">
+                    <div class="total"> <p> Total </p></div>
+                    <div class="together">
+                        <div class="cart-price"> <p> $29.94 </p></div>
+                        <button-cart id= "checkoutButton" type="button"> Checkout </button-cart>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
