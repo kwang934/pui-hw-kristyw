@@ -125,7 +125,7 @@ a {
 }
 
 /* image on index3.html */ 
-.image3 {
+.rollPhoto {
     width: 200px; height: 200px;
     border: 2px solid black;
 }
@@ -159,9 +159,7 @@ button-cart {
   }
 
 /* remove underline */ 
-.center-remove {
-    font-size: 12px;
-    margin-top: 5px;
+#removeCartItem {
     text-decoration: underline;
 }
 
@@ -240,7 +238,9 @@ Product Detail page sectioning */
 /* Shopping cart sectioning alignment */
 .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    margin-left: 335px;
+    margin-right: 35px;
 }
 
 #cart-space {
@@ -256,7 +256,6 @@ Product Detail page sectioning */
 
 .cart1 {
     display: flex;
-    justify-content: space-between;
 }
 
 .cart2 {
@@ -265,65 +264,38 @@ Product Detail page sectioning */
 
 .cart3 {
     display: flex;
-    justify-content: space-between;
     border-top: 2px solid black;
-    width: 60%;
+    width: 80%;
 }
 .cart4 {
     display: flex;
-    justify-content: space-between;
     box-sizing: border-box;
     width: 100%;
 }
 
-.cart1-image-remove {
+.rollPhoto {
     display: flex;
     flex-direction: column;
 }
 
-.cart1-text {
-    display: flex;
-    margin-left: 50px;
-    align-items: center;
-    flex-grow: 1;
-    flex-shrink: 0;
-}
-
-.cart1-price {
+.rollItemPrice {
     display: flex;
     align-items: center;
     margin-left: 50px;
-}
-
-.cart2-image-remove {
-    display: flex;
-    flex-direction: column;
-}
-
-.cart2-text {
-    display: flex;
-    margin-left: 50px;
-    align-items: center;
-    flex-grow: 1;
-    flex-shrink: 0;
-}
-
-.cart2-price {
-    display: flex;
-    align-items: center;
-    margin-left: 40px;
-}
-
-.line-spacing {
-    line-height: 1.4;
+    font-size: 20px;
+    margin-bottom: 30px;
 }
 
 .total {
-    margin-left: 250px;
+    margin-left: 285px;
+    margin-right: 54%;
+    font-size: 20px;
 }
 
 .cart-price {
-    margin-right: 20px;
+    margin-top: 11px;
+    font-size: 20px;
+    margin-bottom: 15%;
 }
 
 /*cart font size*/
@@ -334,4 +306,28 @@ p {
 /*product price and text size*/
 .product-font {
     font-size: 18px;
+}
+
+/*hw5 new cart structuring*/
+.orderInfo {
+    text-align: center;
+    font-size: 20px;
+    flex-grow: 1;
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 60px;
+}
+
+.left-space2 {
+    margin-right: 25%;
+}
+
+.together {
+    display: flex;
+    flex-direction: column;
+}
+
+.resize {
+    font-size: 12px;
+    margin-top: 5px;
 }
