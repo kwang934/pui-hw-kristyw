@@ -128,7 +128,23 @@ function addToCheckout() {
   let myRoll = new Roll(rollType, glazeOption.glaze, packSizeOption.size, rollBase);
   cart.push(myRoll);
   console.log(cart);
+
+  // Locally store the cart
+  localStorage.setItem("storedCart", JSON.stringify(cart));
 }
 
 // Update cart when clicked on button
 document.querySelector("#addCart").addEventListener("click", addToCheckout)
+
+let storedCartJSON = localStorage.getItem("storedCart");
+
+if (storedCartJSON) {
+  const saveRoll = JSON.parse(storedCartJSON);
+  
+  // Save rolls to cart
+  for (const pushRoll of saveRoll) {
+      cart.push(pushRoll);
+  }
+}
+
+console.log(localStorage.getItem("storedCart"));

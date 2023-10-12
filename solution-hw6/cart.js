@@ -40,7 +40,6 @@ const rolls = {
     }    
 };
 
-// HW5 begins
 let cart = new Set ();
 
 class Roll {
@@ -57,17 +56,15 @@ class Roll {
 function cartRolls (rollType, rollGlazing, packSize, rollPrice) {
     let newRoll = new Roll(rollType, rollGlazing, packSize, rollPrice);
     cart.add(newRoll);
+    return newRoll;
 }
-
-cartRolls("Original", "Sugar Milk", "1", 2.49);
-cartRolls("Walnut", "Vanilla", "12", 3.49);
-cartRolls("Raisin", "Sugar Milk", "3", 2.99);
-cartRolls("Apple", "Original", "3", 3.49);
 
 // https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_templates_and_slots
 function cartTemplate(roll) {
   let template = document.getElementById("cart-space");
   let templateContent = template.content.cloneNode(true);
+
+  console.log(templateContent)
 
   // Access and manipulate the DOM
   roll.element = templateContent.querySelector(".cart1");
@@ -78,6 +75,8 @@ function cartTemplate(roll) {
     cart.delete(roll);
     // Need to include price update with removal of roll 
     updateBunPrice();
+
+    localStorage.setItem("storedCart", JSON.stringify(cart));
   }
 
   let cartCheckout = document.querySelector(".container")
@@ -91,11 +90,6 @@ function cartTemplate(roll) {
   removeRoll.addEventListener("click", removeButtonRoll);
 }
 
-// Template changes with clicks
-for (let theRoll of cart) {
-  cartTemplate(theRoll);
-}
-
 // Update total cart price
 function updateBunPrice() {
   let cartPrice = document.querySelector(".cart-price");
@@ -106,10 +100,8 @@ function updateBunPrice() {
   else {
     // Similar to HW 4 calculations
     for (let roll of cart) {
-      // console.log(roll.finalPrice)
       cartPriceVal += Number(roll.finalPrice);
       let finalCartPrice = "$" + (cartPriceVal);
-      // console.log("Price:", finalCartPrice)
       cartPrice.innerHTML = finalCartPrice;
     }
   }
@@ -132,3 +124,22 @@ function cartImage(roll) {
   let rollPrice = roll.element.querySelector(".rollItemPrice");
   rollPrice.innerHTML = "$" + roll.finalPrice;
 }
+
+function getStorage() {
+  let saveRoll = JSON.parse(localStorage.getItem("storedCart"));
+  console.log(saveRoll);
+  
+  // adding it to template above
+  for (let theRoll of saveRoll) {
+    let moreRolls = cartRolls(theRoll.type, theRoll.glazing, theRoll.size, theRoll.basePrice);
+    cartTemplate(moreRolls);
+  }
+}
+
+const storedCart = localStorage.getItem("storedCart");
+
+if (storedCart !== null) {
+  getStorage();
+}
+
+console.log(localStorage.getItem("storedCart"));

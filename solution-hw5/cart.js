@@ -66,10 +66,13 @@ cartRolls("Apple", "Original", "3", 3.49);
 
 // https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_templates_and_slots
 function cartTemplate(roll) {
+  console.log(roll);
   let template = document.getElementById("cart-space");
   let templateContent = template.content.cloneNode(true);
 
   // Access and manipulate the DOM
+  
+  
   roll.element = templateContent.querySelector(".cart1");
   
   // Start of remove
@@ -94,6 +97,7 @@ function cartTemplate(roll) {
 // Template changes with clicks
 for (let theRoll of cart) {
   cartTemplate(theRoll);
+  // console.log(theRoll)
 }
 
 // Update total cart price
