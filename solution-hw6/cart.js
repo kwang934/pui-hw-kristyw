@@ -1,5 +1,5 @@
 const glazing = {
-  'Original': 0,
+  'Keep Original': 0,
   'Sugar Milk': 0,
   'Vanilla': 0.5,
   'Double Chocolate': 1.5,
@@ -101,7 +101,7 @@ function updateBunPrice() {
     // Similar to HW 4 calculations
     for (let roll of cart) {
       cartPriceVal += Number(roll.finalPrice);
-      let finalCartPrice = "$" + (cartPriceVal);
+      let finalCartPrice = "$" + (cartPriceVal).toFixed(2);
       cartPrice.innerHTML = finalCartPrice;
     }
   }
@@ -129,7 +129,7 @@ function getStorage() {
   let saveRoll = JSON.parse(localStorage.getItem("storedCart"));
   console.log(saveRoll);
   
-  // adding it to template above
+  // Adding it to template above
   for (let theRoll of saveRoll) {
     let moreRolls = cartRolls(theRoll.type, theRoll.glazing, theRoll.size, theRoll.basePrice);
     cartTemplate(moreRolls);
@@ -138,6 +138,7 @@ function getStorage() {
 
 const storedCart = localStorage.getItem("storedCart");
 
+// Undefined cases
 if (storedCart !== null) {
   getStorage();
 }
