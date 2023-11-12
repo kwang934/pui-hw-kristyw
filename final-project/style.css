@@ -1,3 +1,4 @@
+/*index page*/ 
 h1 {
     text-align: center;
     font-weight: bold; 
@@ -47,4 +48,10 @@ button:hover {
     font-size: 16px;
     width: 110px;
     height: 24px;
+}
+
+/* review page */
+p {
+    margin-left: 10%;
+    font-size: 18px;
 }
