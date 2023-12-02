@@ -15,7 +15,7 @@ body {
 }
 
 a {
-  color: #34b7a7;
+  color: #ff96d5;
   text-decoration: none;
 }
 
@@ -273,7 +273,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #34b7a7;
+  color: #ff96d5;
 }
 
 .navbar .dropdown:hover>ul {
@@ -373,7 +373,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #34b7a7;
+  color: #ff96d5;
 }
 
 .navbar-mobile .getstarted,
@@ -408,7 +408,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #34b7a7;
+  color: #ff96d5;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -595,7 +595,7 @@ section {
 --------------------------------------------------------------*/
 .about .content h3 {
   font-weight: 700;
-  font-size: 26px;
+  font-size: 35px;
   color: #555555;
 }
 
@@ -606,12 +606,6 @@ section {
 
 .about .content ul li {
   padding-bottom: 10px;
-}
-
-.about .content ul i {
-  font-size: 20px;
-  padding-right: 2px;
-  color: #34b7a7;
 }
 
 .about .content p:last-child {
@@ -659,22 +653,6 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Facts
---------------------------------------------------------------*/
-.facts .counters span {
-  font-size: 48px;
-  display: block;
-  color: #ff96d5;
-}
-
-.facts .counters p {
-  padding: 0;
-  margin: 0 0 20px 0;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-}
-
-/*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
 .testimonials .section-header {
@@ -712,7 +690,7 @@ section {
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: #ff96d5;
+  color: #ae2f7b;
   font-size: 26px;
 }
 
@@ -750,11 +728,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #ff96d5;
+  border: 1px solid #ae2f7b;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #ff96d5;
+  background-color: #ae2f7b;
 }
 
 /*--------------------------------------------------------------
@@ -1100,5 +1078,5 @@ section {
 }
 
 #footer .credits a {
-  color: #34b7a7;
+  color: #ff96d5;
 }
