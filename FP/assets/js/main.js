@@ -245,3 +245,15 @@
   new PureCounter();
 
 })()
+
+/* Spotify API */
+
+window.onSpotifyIframeApiReady = (IFrameAPI) => {
+  const element = document.getElementById('embed-iframe');
+  const options = {
+  uri: 'https://open.spotify.com/artist/45dkTj5sMRSjrmBSBeiHym?si=sjxjFfEpQZa5j3yojJ4-2Q'
+  };
+  const callback = (EmbedController) => {};
+  IFrameAPI.createController(element, options, callback);
+  };
+  
