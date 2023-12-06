@@ -461,12 +461,12 @@ h6 {
   border-radius: 50px;
   transition: 0.5s;
   margin-top: 30px;
-  color: #fff;
-  background: rgb(222, 99, 173);
+  color: #ffffff;
+  background: #ae2f7b;
 }
 
 #hero .btn-about:hover {
-  background: #ae2f7b;
+  background: #ff96d5;
 }
 
 @media (min-width: 1024px) {
