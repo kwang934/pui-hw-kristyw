@@ -462,7 +462,7 @@ h6 {
   transition: 0.5s;
   margin-top: 30px;
   color: #fff;
-  background: #ff96d5;
+  background: rgb(222, 99, 173);
 }
 
 #hero .btn-about:hover {
