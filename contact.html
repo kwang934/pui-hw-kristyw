@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8"/>
+    <meta name="author" content="Duquesne Incline">
+    <meta name="keywords" content="Duquesne Incline">
+    <meta name="description" content="Tourist website">
+
+    <title>Duquesne Incline</title>
+
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css"/>
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css"/>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/jquery-ui.js"></script>
+
+    <script>
+      $(function() {
+          $( "#tabs" ).tabs({
+            event: "mouseover"
+          });
+      });
+    </script>
+    
+</head>
+
+<body>
+    <div id="top_row">
+        <header>
+            <h1>Contact Information</h1>
+        </header>
+
+        <br>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="fares.html">Fares and Rates</a>
+            <a href="trips.html">Field Trips and City Tours</a>
+            <a href="about.html">About the Incline</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+
+    <div id="content">
+        <h3>Contact Information</h3>
+    </div>
+
+    <!-- Images from Google -->
+    <table>
+        <tr>
+            <th colspan="2">Contact Information</th></tr>
+        
+            <tr><td>Parking Address</td>
+            <td>1197 West Carson Street Pittsburgh, PA. 15219</td></tr>
+
+            <tr><td>Mailing Address</td>
+            <td>11220 Grandview Ave. Pittsburgh, PA 15211</td></tr>
+        
+            <tr><td>Phone Number</td>
+            <td>412-381-1665</td></tr>
+
+            <tr><td>Email Address</td>
+            <td><a href="mailto:duq.incline@duquesneincline.org" target="_blank">duq.incline@duquesneincline.org</a></td></tr>
+
+            <tr><td>Website</td>
+            <td><a href="http://www.duquesneincline.org/" target="_blank">Duquesne incline</a><br/></td></tr>
+
+            <tr><td>Photos (Courtesy of Google)</td>
+            <td><img src="images/nightview.png" alt="City Lights at Night" style="width:100px;height:100px;"/>
+                <img src="images/deck.png" alt="The Ride Up" style="width:100px;height:100px;"/>
+                <img src="images/sunset.png" alt="Sunset Incline" style="width:100px;height:100px;" /></td></tr>
+
+
+    </table>
+
+    <br>
+
+    <h3>Please use the below map to find us.</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.6721225748693!2d-80.02100948471617!3d40.438258579362724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f6af788dbd6b%3A0xbdf019068d677521!2sDuquesne%20Incline!5e0!3m2!1sen!2sus!4v1617939551081!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    <br>
+
+    <h3>Join our mailing list!</h3>
+            <form onsubmit="return validate()" action="mailto:duq.incline@duquesneincline.org">
+                <fieldset>
+                    <label for="uname">Name:</label><br/>
+                    <input type="text" id="uname" name="uname" value="Your Name" size="20" maxlength="250" required ><br/><br/>
+                    
+                    <label for="uname">Zip Code:</label><br/>
+                    <input type="text" id="myText" name="zip_code" maxlength="5"><br/><br>
+                    
+                    <label for="mail">Please provide your email address:</label><br/>
+                    <input type="email" id="mail" name="mail" value="dincline@gmail.com" required ><br/><br/>
+
+                    <label for="email">Please indicate if you would like to subscribe to the Duquesne Incline’s newsletter:</label><br/>
+                    <input type="checkbox" id="email" name="email" value="Update">
+                    <label for="email">Yes, please update me!</label><br/><br/>
+                
+                </fieldset>
+                <fieldset>
+                    <input type ="image" src="images/submit.png" alt="Submit" name= "btnimage" style="width:80px;height:80px;">
+                </fieldset>
+            </form>
+        
+            <br>
+
+    <hr style="width:100%">
+
+
+    <div id="sidebar">
+		<h3>Hours of Operation</h3>
+    <div id="tabs">
+      <ul>
+          <li><a href="#tabs-1">Monday through Saturday</a></li>
+          <li><a href="#tabs-2">Sundays and Holidays</a></li>
+          <li><a href="#tabs-3">Days Open</a></li>
+      </ul>
+
+      <div id="tabs-1">
+          <p>Monday through Saturday: 5:30 a.m. to 12:30 a.m.</p>
+      </div>
+
+      <div id="tabs-2">
+          <p>Sundays and Holidays: 7:00 a.m. to 12:30 a.m.</p>
+      </div>
+
+      <div id="tabs-3">
+          <p>Open 365 days a year!</p>
+      </div>
+    </div>  
+
+    <br>
+
+        <a href="https://www.youtube.com/watch?v=bSLvrz5GraI"><img src="images/youtube.png" alt="Youtube Logo" style="width:30px;height:30px;"/></a>
+        <a href="https://www.facebook.com/TheDuquesneIncline/" target ="_blank"><img src="images/facebook.png" alt="Facebook Logo" style="width:30px;height:30px;"/></a>
+        <a href="http://davedicello.com/places/pittsburgh/" target="_blank"><img src="images/photography.png" alt="Photo Logo" style="width:30px;height:30px;"/></a>
+
+	</div>
+
+    <footer>
+        <hr/>
+        &copy; 2021 DUQUESNE INCLINE | Created by Kristy Wang <br/>
+    </footer>
+
+</body>
+
+</html>

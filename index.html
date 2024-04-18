@@ -1,20 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta charset="UTF-8">
-  <title>Page Title</title>
-  
-  <body>
+<head>
 
-    <ul>
-      <li><a href="solution-hw0">Homework Assignment 0</a></li>
-      <li><a href="solution-hw1">Homework Assignment 1</a></li>
-      <li><a href="solution-hw2">Homework Assignment 2</a></li>
-      <li><a href="solution-hw3">Homework Assignment 3</a></li>
-      <li><a href="solution-hw4">Homework Assignment 4</a></li>
-      <li><a href="solution-hw5">Homework Assignment 5</a></li>
-      <li><a href="solution-hw6">Homework Assignment 6</a></li>
-      <li><a href="FP">Final Project</a></li>
-    </ul>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Duquesne Incline">
+    <meta name="keywords" content="Duquesne Incline">
+    <meta name="description" content="Tourist website">
 
-  </body>
+    <title>Duquesne Incline</title>
+
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css"/>
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css"/>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/jquery-ui.js"></script>
+
+    <script>
+      $(function() {
+          $( "#tabs" ).tabs({
+            event: "mouseover"
+          });
+      });
+    </script>
+    
+</head>
+
+<body>
+    <div id="top_row">
+        <header>
+            <h1>Duquesne Incline</h1>
+        </header>
+
+    <br>
+        
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="fares.html">Fares and Rates</a>
+            <a href="trips.html">Field Trips and City Tours</a>
+            <a href="about.html">About the Incline</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+
+    <br>
+
+    <!-- Learned from W3Schools -->
+    <!-- Images from Google -->
+    <div id="content">
+
+        <div class="slideshow-container">
+          Photos Courtesy of Google
+            <div class="mySlides fade">
+              <img src="images/main.png" alt="The Incline" style="width:800px;height:500px;"> 
+            </div>
+            <div class="mySlides fade">
+              <img src="images/lights.png" alt="In the Snow" style="width:800px;height:500px;">
+            </div>
+            <div class="mySlides fade">
+              <img src="images/train.png" alt="The Trolley" style="width:800px;height:500px;">
+            </div>
+            <div class="mySlides fade">
+              <img src="images/logo.png" alt="The Logo" style="width:800px;height:500px;">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+          </div>
+          <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if(n > slides.length) {
+                slideIndex = 1
+              }
+              if(n < 1) {
+                slideIndex = slides.length
+              }
+              for(i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for(i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex - 1].style.display = "block";
+              dots[slideIndex - 1].className += " active";
+            }
+          </script>
+
+        <h3>Explore the Duquesne Incline</h3>
+
+        <div id="bio">
+            <p>Take a step back in time on a century-old cable car and see the best views of downtown Pittsburgh while riding one of the few remaining inclines in the country. Opened on May 20, 1877, the Duquesne Incline was rescued and restored by a group of local residents in 1963 and still delights residents and visitors with its original, elegant, wooden cable cars. Now you can visit the interior of the incline and watch the machinery while it operates. The Duquesne Incline's upper station houses a museum of Pittsburgh history, including photos and a storehouse of information on inclines from around the world. Unusual Pittsburgh souvenirs, maps and photos can be found at the gift shop.</p>
+        </div>
+    </div>
+
+    <hr style="width:100%">
+
+    <div id="sidebar">
+		<h3>Hours of Operation</h3>
+    <div id="tabs">
+      <ul>
+          <li><a href="#tabs-1">Monday through Saturday</a></li>
+          <li><a href="#tabs-2">Sundays and Holidays</a></li>
+          <li><a href="#tabs-3">Days Open</a></li>
+      </ul>
+
+      <div id="tabs-1">
+          <p>Monday through Saturday: 5:30 a.m. to 12:30 a.m.</p>
+      </div>
+
+      <div id="tabs-2">
+          <p>Sundays and Holidays: 7:00 a.m. to 12:30 a.m.</p>
+      </div>
+
+      <div id="tabs-3">
+          <p>Open 365 days a year!</p>
+      </div>
+    </div>  
+
+    <br>
+
+      <a href="https://www.youtube.com/watch?v=bSLvrz5GraI"><img src="images/youtube.png" alt="Youtube Logo" style="width:30px;height:30px;"/></a>
+      <a href="https://www.facebook.com/TheDuquesneIncline/" target ="_blank"><img src="images/facebook.png" alt="Facebook Logo" style="width:30px;height:30px;"/></a>
+      <a href="http://davedicello.com/places/pittsburgh/" target="_blank"><img src="images/photography.png" alt="Photo Logo" style="width:30px;height:30px;"/></a>
+
+	</div>
+
+    <footer>
+        <hr/>
+        &copy; 2021 DUQUESNE INCLINE | Created by Kristy Wang <br/>
+    </footer>
+
+</body>
+
 </html>

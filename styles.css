@@ -1,0 +1,191 @@
+body {
+	font-family: "Sans-Serif", Arial, Helvetica, Verdana; /* Set all font in the page to Helvetica with font formating */
+	font-size: 125%; /* Generally set the font-size to 100% in the body - you can then change with em in the other areas */
+	line-height: 1.7em; /* The line-height property in CSS controls the space between lines of text. */
+	color: #000000; /* Hex Color Black */
+}
+
+a {
+    color:#5F7470;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #889696;
+    text-decoration: none;
+}
+
+#top_row h1 {
+    font-family: "Serif", Georgia, Garamond;
+    color: #5F7470;
+    font-size: 4.5em;
+    letter-spacing: -2px;
+    text-align: center;
+}
+
+#top_row h3 {
+    font-size: 1.125em;
+    font-weight: 200;
+}
+
+#top_row header {
+    margin-bottom: -1.5em;
+    color: #5F7470;
+}
+
+#top_row nav {
+    float: right;
+}
+
+#top_row nav a {
+    font-size: 1.125em;
+    font-weight: 400;
+    padding: 15px;
+}
+
+#bio {
+    margin-left: 0em;
+    font-size: 1em;
+}
+
+#bio a {
+    text-decoration: none;
+    border-bottom: 1px dotted #889696;
+    color: #889696;
+}
+
+#bio a:hover {
+    color: #5F7470;
+}
+
+#top_row nav a.selected {
+	background: #d2d4c8;
+	color: #5f7470;	
+}
+
+#bio a:visited {
+  color: rgb(128, 128, 170);
+}
+
+#online a:visited {
+  color: rgb(128, 128, 170);
+}
+
+	
+#top_row nav a.selected:hover {
+	background: #d2d4c8;
+	color: #5f7470;	
+}
+
+#top_row nav a:hover {	
+	background: #d2d4c8;
+	color: #114258;
+}
+
+table {
+    width: 60%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #5F7470;
+    border-spacing: 3px;
+    margin: 5px;
+    table-layout: auto;
+    border-collapse: collapse;
+}
+
+th {height: 40px; font-weight: bold; }
+th, td {
+    padding: 2px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    color: #5F7470;
+}
+
+body {background-color: rgb(224, 226, 219);
+}
+
+html {
+  font-size: 70%;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* learned from W3Schools */
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+/* buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* black background color*/
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+footer {
+  display: block;
+  background-color: rgb(224, 226, 219);
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+}
